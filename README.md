@@ -18,5 +18,8 @@ TARGET_HASH = "8e2b0f24e6f22012b834bde961cc4cc1bb6c6880"                # SHA1 t
 TARGET_LENGTH = 8                                                       # Password length
 </pre>
 
+## Test
+- Work with 1000 M of dynamic word dictionary 
+
 ## Download!
 - All: https://github.com/nextco/sha1-bruteforce/archive/master.zip
