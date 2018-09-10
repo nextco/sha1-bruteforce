@@ -25,12 +25,12 @@ def bruteforce():
 
         #  print(word_string, hash_)
         if hash_ == TARGET_HASH:
-            print("\n==> Founded: Word = %s | Hash = %s" % (word_string, hash_))
+            print("\n==> Founded: word = %s | hash = %s" % (word_string, hash_))
             break
 
         # Just for debug to check if python is alive xD
         if attempts % (1 << 20) == 0:           # Show print every 1 << 20 attempts
-            print("debug!control: Word = %s | Hash = %s | attempts = %d" % (word_string, hash_, attempts))
+            print("debug!control: word = %s | hash = %s | attempts = %d" % (word_string, hash_, attempts))
 
         attempts += 1
 
