@@ -1,10 +1,9 @@
-# Simple SHA1 Bruteforce.
+# Simple SHA1 bruteforce on python.
 
 Work with dictionary of numbers, the length of the password is known.
 
 ## Results:
 ![](img/result.png)
-Lets Go! This project is maintained by @nextco
 
 ## Currently supported on:
 - Python 2.7 (Windows & Linux)
