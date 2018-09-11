@@ -5,15 +5,16 @@
 from functools import reduce
 import hashlib
 import itertools
-import string       # digits
 
 TARGET_HASH = "ac43bb53262e4edd82c0e82a93c84755"                        # MD5 to broke
 TARGET_LENGTH = 6                                                       # Password length
 
 
 def bruteforce():
-    seed = string.ascii_lowercase + string.digits                                       # semilla (numbers)
-    # seed = "2013456789"                                                # if you know the order of bytes just alter it
+    # seed = "1234567890"                                           # if you know the order of bytes just alter it
+    # https://www.cs.ru.nl/bachelors-theses/2010/Martin_Devillers___0437999___Analyzing_password_strength.pdf
+    seed = "aeosrnidlctumpbgqvyhfzjxwk"                             # lower alpha   (the order is altered to improve)
+    # seed = "aeosrnidlctumpbgqvyhfzjxwk" + "1234567890"            # lower alpha + numbers
     seed_bytes = list(map(ord, seed))
     print("seed_bytes = %s" % seed_bytes)
 
