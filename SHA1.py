@@ -5,8 +5,8 @@ from functools import reduce
 import hashlib
 import itertools
 
-TARGET_HASH = "2b3e371486dee4f954150c7863877108b7d4881d"                    # SHA1 to broke
-TARGET_LENGTH = 11                                                          # Password length
+TARGET_HASH = "42d0815e3262dcfec1756092959bb4b0f2ac118b"                    # SHA1 to broke
+TARGET_LENGTH = 6                                                           # Password length
 
 def bruteforce():
     # seed = "1234567890"                                                   # seed (numbers)
