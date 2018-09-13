@@ -4,15 +4,16 @@
 from functools import reduce
 import hashlib
 import itertools
-import string       # digits
 
-TARGET_HASH = "8e2b0f24e6f22012b834bde961cc4cc1bb6c6880"                # SHA1 to broke
-TARGET_LENGTH = 8                                                       # Password length
-
+TARGET_HASH = "2b3e371486dee4f954150c7863877108b7d4881d"                    # SHA1 to broke
+TARGET_LENGTH = 11                                                          # Password length
 
 def bruteforce():
-    seed = string.digits                                              # semilla (numbers)
-    # seed = "2013456789"                                                 # if you know the order of bytes just alter it
+    # seed = "1234567890"                                                   # seed (numbers)
+    # http://datagenetics.com/blog/july42015/index.html
+    # seed = "etaonhisrdlumfcgwypbvkxjqz" + "1234567890"                    # lowercase + numbers
+                                                                            # is the same lowercase order altered to improve
+    seed = "ketaonhisrdlumfcgwypbvxjqz" + "1234567890"                      # if you know the start letter
     seed_bytes = list(map(ord, seed))
     print("seed_bytes = %s" % seed_bytes)
 
@@ -33,7 +34,6 @@ def bruteforce():
             print("debug!control: word = %s | hash = %s | attempts = %d" % (word_string, hash_, attempts))
 
         attempts += 1
-
 
 if __name__ == "__main__":
     bruteforce()
