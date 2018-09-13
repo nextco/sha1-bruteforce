@@ -1,6 +1,6 @@
 # Simple SHA1 bruteforce on python.
 
-Work with dictionary of numbers, the length of the password is known.
+Work with dictionary of numbers|lowercase|symbols generated on memory, the length of the password is known.
 
 ## Results:
 ![](img/result.png)
@@ -9,7 +9,9 @@ Work with dictionary of numbers, the length of the password is known.
 - Python 2.7 (Windows & Linux)
 
 ## Contains:
-- SHA1.py (script to bruteforce)
+- SHA1.py (python script to bruteforce SHA-1)
+- SHA1.cpp (cpp version, for experiment: this version is slow compared to python version)
+- MD5.py (demo of adaptation to another hash algorithm)
 
 ## Usage
 - Modify constants on script
@@ -19,7 +21,7 @@ TARGET_LENGTH = 8                                                       # Passwo
 </pre>
 
 ## Test
-- Work with 1000 M of dynamic word dictionary 
+- Work with 1000M of dynamic memory dictionary 
 
 ## Download!
 - All: https://github.com/nextco/sha1-bruteforce/archive/master.zip

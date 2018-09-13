@@ -8,7 +8,7 @@ import itertools
 
 TARGET_HASH = "ac43bb53262e4edd82c0e82a93c84755"                        # MD5 to broke
 TARGET_LENGTH = 6                                                       # Password length
-
+re
 
 def bruteforce():
     # seed = "1234567890"                                           # if you know the order of bytes just alter it
